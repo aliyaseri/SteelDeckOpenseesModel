@@ -138,10 +138,38 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 #element 	elasticBeamColumn	61	16	32	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 
 
+element 	zeroLengthContact3D	62	1	17	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	63	2	18	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	64	3	19	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	65	4	20	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	66	5	21	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	67	6	22	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	68	7	23	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	69	8	24	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	70	9	25	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	71	10	26	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	72	11	27	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	73	12	28	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	74	13	29	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	75	14	30	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	76	15	31	1.00E+08	1.00E+08	0.4	0	3
+element 	zeroLengthContact3D	77	16	32	1.00E+08	1.00E+08	0.4	0	3
 
-recorder Node -file AnewD.out -time -node  7 -dof 3 disp
-recorder Node -file AnewR1.out -time -node  1 -dof 3 reaction
-recorder Node -file AnewR21.out -time -node  16 -dof 3 reaction
+
+
+#element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
+element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
+
+
+
+
+
+
+
+
+recorder Node -file BnewD.out -time -node  7 -dof 3 disp
+recorder Node -file BnewR1.out -time -node  1 -dof 3 reaction
+recorder Node -file BnewR21.out -time -node  16 -dof 3 reaction
 
 #load
 pattern Plain 1 Linear { ;
