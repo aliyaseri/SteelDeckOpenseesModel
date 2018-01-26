@@ -138,30 +138,29 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 #element 	elasticBeamColumn	61	16	32	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 
 #element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
-element 	zeroLengthContact3D	62	1	17	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	63	2	18	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	64	3	19	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	65	4	20	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	66	5	21	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	67	6	22	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	68	7	23	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	69	8	24	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	70	9	25	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	71	10	26	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	72	11	27	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	73	12	28	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	74	13	29	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	75	14	30	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	76	15	31	1.00E+08	1.00E+08	0.4	0	3
-element 	zeroLengthContact3D	77	16	32	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	62	1	17	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	63	2	18	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	64	3	19	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	65	4	20	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	66	5	21	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	67	6	22	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	68	7	23	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	69	8	24	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	70	9	25	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	71	10	26	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	72	11	27	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	73	12	28	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	74	13	29	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	75	14	30	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	76	15	31	1.00E+08	1.00E+08	0.4	0	3
+#element 	zeroLengthContact3D	77	16	32	1.00E+08	1.00E+08	0.4	0	3
 
 
 
 
 #element zeroLengthInterface2D $eleTag -sNdNum $sNdNum -mNdNum $mNdNum –dof $sdof $mdof -Nodes $Nodes $Kn $Kt $phi
 
-
-
+element zeroLengthInterface2D 62 -sNdNum 16 -mNdNum 16 –dof 1 2 -Nodes 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 1e8 1e8 20;
 
 
 
