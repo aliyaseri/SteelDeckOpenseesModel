@@ -42,6 +42,9 @@ source node.tcl
 fix 	1	1	1	1	1	1	1 ;
 fix 	16	1	1	1	1	1	0 ; 
 
+
+
+## new material for steel and stud 
 uniaxialMaterial   Steel02        1 300e6   202.7e9  0.000001 18.5 0.925 0.15
 uniaxialMaterial   Steel02        2 415e6   202.7e9  0.000001 18.5 0.925 0.15
 
@@ -65,6 +68,18 @@ nDMaterial PlateRebar 6 2 0
 #tra 0.000267
 #section LayeredShell $sectionTag $nLayers $matTag1 $thickness1...$matTagn $thicknessn
 section LayeredShell 1 3 4 0.156 5 0.00238 6 0.000267;
+
+
+
+
+##new material and section for contact
+#nDMaterial ContactMaterial3D $matTag $mu $G $c $t
+nDMaterial ContactMaterial3D 10 0.4 1000.0 0.0 0.0;
+
+#section PlateFiber $secTag $matTag $h
+section PlateFiber 20 10 0.001
+
+
 
 
 set E 2.001E11;
