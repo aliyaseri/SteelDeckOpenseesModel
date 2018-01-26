@@ -137,7 +137,7 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 #element 	elasticBeamColumn	60	15	31	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 #element 	elasticBeamColumn	61	16	32	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 
-
+#element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
 element 	zeroLengthContact3D	62	1	17	1.00E+08	1.00E+08	0.4	0	3
 element 	zeroLengthContact3D	63	2	18	1.00E+08	1.00E+08	0.4	0	3
 element 	zeroLengthContact3D	64	3	19	1.00E+08	1.00E+08	0.4	0	3
@@ -157,8 +157,11 @@ element 	zeroLengthContact3D	77	16	32	1.00E+08	1.00E+08	0.4	0	3
 
 
 
-#element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
-element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
+
+#element zeroLengthInterface2D $eleTag -sNdNum $sNdNum -mNdNum $mNdNum –dof $sdof $mdof -Nodes $Nodes $Kn $Kt $phi
+
+
+
 
 
 
