@@ -75,7 +75,12 @@ section LayeredShell 1 3 4 0.156 5 0.00238 6 0.000267;
 ##new material and section for contact
 #nDMaterial ContactMaterial3D $matTag $mu $G $c $t
 
-nDMaterial ContactMaterial3D 10 0.4 1000.0 0.0 0.0;
+#nDMaterial ContactMaterial3D 10 0.4 1000.0 0.0 0.0;
+
+
+#frictionModel Coulomb $frnTag $mu
+frictionModel Coulomb 10 0.4
+
 
 #section PlateFiber $secTag $matTag $h
 section PlateFiber 20 10 0.001
