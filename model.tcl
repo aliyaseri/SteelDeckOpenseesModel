@@ -160,7 +160,7 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 
 #element zeroLengthInterface2D $eleTag -sNdNum $sNdNum -mNdNum $mNdNum –dof $sdof $mdof -Nodes $Nodes $Kn $Kt $phi
 
-element zeroLengthInterface2D 62 -sNdNum 16 -mNdNum 16 –dof 1 2 -Nodes 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 1e8 1e8 20;
+element zeroLengtContactNTS2Dh 62 -sNdNum 8 -mNdNum 8 –dof 2 3 -Nodes 17 18 19 20 21 22 23 24 8 7 6 5 4 3 2 1 1e8 1e8 16;
 
 
 
