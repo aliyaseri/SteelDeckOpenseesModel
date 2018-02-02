@@ -214,27 +214,45 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 
 #element flatSliderBearing $eleTag $iNode $jNode $frnMdlTag $kInit -P $matTag -T $matTag -My $matTag -Mz $matTag <-orient <$x1 $x2 $x3> $y1 $y2 $y3> <-shearDist $sDratio> <-doRayleigh> <-mass $m> <-iter $maxIter $tol>
 #
-element 	flatSliderBreang	62	65	81	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	63	66	82	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	64	67	83	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	65	68	84	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	66	69	85	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	67	70	86	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	68	71	87	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	69	72	88	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	70	73	89	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	71	74	90	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	72	75	91	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	73	76	92	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	74	77	93	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	75	78	94	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	76	79	95	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
-element 	flatSliderBreang	77	80	96	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	62	65	81	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	63	66	82	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	64	67	83	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	65	68	84	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	66	69	85	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	67	70	86	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	68	71	87	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	69	72	88	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	70	73	89	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	71	74	90	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	72	75	91	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	73	76	92	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	74	77	93	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	75	78	94	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	76	79	95	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	77	80	96	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
 
 
-recorder Node -file AnewD.out -time -node  7 -dof 3 disp
-recorder Node -file AnewR1.out -time -node  1 -dof 3 reaction
-recorder Node -file AnewR21.out -time -node  16 -dof 3 reaction
+element 	flatSliderBearing	62	1	17	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	63	2	18	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	64	3	19	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	65	4	20	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	66	5	21	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	67	6	22	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	68	7	23	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	69	8	24	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	70	9	25	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	71	10	26	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	72	11	27	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	73	12	28	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	74	13	29	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	75	14	30	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	76	15	31	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	77	16	32	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+
+
+recorder Node -file SnewD.out -time -node  7 -dof 3 disp
+recorder Node -file SnewR1.out -time -node  1 -dof 3 reaction
+recorder Node -file SnewR21.out -time -node  16 -dof 3 reaction
 
 #load
 pattern Plain 1 Linear { ;
