@@ -13,10 +13,10 @@ source node.tcl
 
 
 #rigidLink 	beam	master node 	slave node
-#rigidLink 	beam	1	17
-#rigidLink 	beam	2	18
-#rigidLink 	beam	3	19
-#rigidLink 	beam	4	20
+#rigidLink 	beam	17	17
+#rigidLink 	beam	18	18
+#rigidLink 	beam	19	19
+#rigidLink 	beam	20	20
 #rigidLink 	beam	5	21
 #rigidLink 	beam	6	22
 #rigidLink 	beam	7	23
@@ -29,7 +29,23 @@ source node.tcl
 #rigidLink 	beam	14	30
 #rigidLink 	beam	15	31
 #rigidLink 	beam	16	32
-
+#
+rigidLink 	beam	17	65
+rigidLink 	beam	18	66
+rigidLink 	beam	19	67
+rigidLink 	beam	20	68
+rigidLink 	beam	21	69
+rigidLink 	beam	22	70
+rigidLink 	beam	23	71
+rigidLink 	beam	24	72
+rigidLink 	beam	25	73
+rigidLink 	beam	26	74
+rigidLink 	beam	27	75
+rigidLink 	beam	28	76
+rigidLink 	beam	29	77
+rigidLink 	beam	30	78
+rigidLink 	beam	31	79
+rigidLink 	beam	32	80
 
 
 
@@ -137,6 +153,26 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 #element 	elasticBeamColumn	60	15	31	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 #element 	elasticBeamColumn	61	16	32	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 
+
+#element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
+element 	zeroLengthContact3D	62	65	1	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	63	66	2	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	64	67	3	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	65	68	4	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	66	69	5	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	67	70	6	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	68	71	7	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	69	72	8	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	70	72	8	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	71	74	10	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	72	75	11	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	73	76	12	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	74	77	13	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	75	78	14	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	76	79	15	1.00E+10	1.00E+10	0.4	0	1
+element 	zeroLengthContact3D	77	80	16	1.00E+10	1.00E+10	0.4	0	1
+puts "    creat to it"
+#
 
 
 recorder Node -file AnewD.out -time -node  7 -dof 3 disp
