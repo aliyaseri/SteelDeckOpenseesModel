@@ -31,7 +31,77 @@ source node.tcl
 #rigidLink 	beam	16	32
 
 
+model BasicBuilder -ndm 3 -ndf 3
 
+node 	65	0	0	0
+node 	66	0.143	0	0
+node 	67	0.4287	0	0
+node 	68	0.7144	0	0
+node 	69	1.0001	0	0
+node 	70	1.2858	0	0
+node 	71	1.5715	0	0
+node 	72	1.8572	0	0
+node 	73	2.1429	0	0
+node 	74	2.4286	0	0
+node 	75	2.7143	0	0
+node 	76	3	0	0
+node 	77	3.2857	0	0
+node 	78	3.5714	0	0
+node 	79	3.8571	0	0
+node 	80	4.0001	0	0
+
+node 	81	0	0	0.1
+node 	82	0.143	0	0.1
+node 	83	0.4287	0	0.1
+node 	84	0.7144	0	0.1
+node 	85	1.0001	0	0.1
+node 	86	1.2858	0	0.1
+node 	87	1.5715	0	0.1
+node 	88	1.8572	0	0.1
+node 	89	2.1429	0	0.1
+node 	90	2.4286	0	0.1
+node 	91	2.7143	0	0.1
+node 	92	3	0	0.1
+node 	93	3.2857	0	0.1
+node 	94	3.5714	0	0.1
+node 	95	3.8571	0	0.1
+node 	96	4.0001	0	0.1
+
+
+model BasicBuilder -ndm 3 -ndf 6
+equalDOF 	17	81	1	2	3
+equalDOF 	18	82	1	2	3
+equalDOF 	19	83	1	2	3
+equalDOF 	20	84	1	2	3
+equalDOF 	21	85	1	2	3
+equalDOF 	22	86	1	2	3
+equalDOF 	23	87	1	2	3
+equalDOF 	24	88	1	2	3
+equalDOF 	25	89	1	2	3
+equalDOF 	26	90	1	2	3
+equalDOF 	27	91	1	2	3
+equalDOF 	28	92	1	2	3
+equalDOF 	29	93	1	2	3
+equalDOF 	30	94	1	2	3
+equalDOF 	31	95	1	2	3
+equalDOF 	32	96	1	2	3
+
+equalDOF 	1	65	1	2	3
+equalDOF 	2	66	1	2	3
+equalDOF 	3	67	1	2	3
+equalDOF 	4	68	1	2	3
+equalDOF 	5	69	1	2	3
+equalDOF 	6	70	1	2	3
+equalDOF 	7	71	1	2	3
+equalDOF 	8	72	1	2	3
+equalDOF 	9	73	1	2	3
+equalDOF 	10	74	1	2	3
+equalDOF 	11	75	1	2	3
+equalDOF 	12	76	1	2	3
+equalDOF 	13	77	1	2	3
+equalDOF 	14	78	1	2	3
+equalDOF 	15	79	1	2	3
+equalDOF 	16	80	1	2	3
 
 
 
@@ -44,7 +114,13 @@ fix 	16	1	1	1	1	1	0 ;
 
 uniaxialMaterial   Steel02        1 300e6   202.7e9  0.000001 18.5 0.925 0.15
 uniaxialMaterial   Steel02        2 415e6   202.7e9  0.000001 18.5 0.925 0.15
+uniaxialMaterial Elastic 50 201e9
 
+
+
+#frictionModel Coulomb $frnTag $mu
+
+frictionModel Coulomb 1 0.4
 
 #nDmaterial PlaneStressUserMaterial $matTag 40 7 $fc $ft $fcu $epsc0 $epscu $epstu $stc
 #                                                               fc         ft    fcu     epsc0     epscu  epstu  stc
@@ -100,7 +176,6 @@ source element.tcl
 #element 	truss	60	15	31	0.1	2
 #element 	truss	61	16	32	0.1	2
 
-
 #element 	beam	eleTag	I 	j	A	E	G	J	Iz	Iy	transtag	mass
 element 	elasticBeamColumn	46	1	17	0.000314159	2.10E+11	80769230769	1.5708E-08	7.85398E-09	7.85398E-09	1	7850
 element 	elasticBeamColumn	47	2	18	0.000314159	2.10E+11	80769230769	1.5708E-08	7.85398E-09	7.85398E-09	1	7850
@@ -137,6 +212,24 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 #element 	elasticBeamColumn	60	15	31	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 #element 	elasticBeamColumn	61	16	32	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 
+#element flatSliderBearing $eleTag $iNode $jNode $frnMdlTag $kInit -P $matTag -T $matTag -My $matTag -Mz $matTag <-orient <$x1 $x2 $x3> $y1 $y2 $y3> <-shearDist $sDratio> <-doRayleigh> <-mass $m> <-iter $maxIter $tol>
+#
+element 	flatSliderBreang	62	65	81	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	63	66	82	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	64	67	83	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	65	68	84	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	66	69	85	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	67	70	86	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	68	71	87	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	69	72	88	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	70	73	89	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	71	74	90	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	72	75	91	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	73	76	92	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	74	77	93	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	75	78	94	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	76	79	95	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBreang	77	80	96	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
 
 
 recorder Node -file AnewD.out -time -node  7 -dof 3 disp
