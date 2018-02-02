@@ -155,24 +155,45 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 
 
 #element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
-element 	zeroLengthContact3D	62	65	1	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	63	66	2	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	64	67	3	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	65	68	4	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	66	69	5	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	67	70	6	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	68	71	7	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	69	72	8	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	70	72	8	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	71	74	10	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	72	75	11	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	73	76	12	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	74	77	13	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	75	78	14	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	76	79	15	1.00E+10	1.00E+10	0.4	0	1
-element 	zeroLengthContact3D	77	80	16	1.00E+10	1.00E+10	0.4	0	1
-puts "    creat to it"
+#element 	zeroLengthImpact3D	62	65	1	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	63	66	2	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	64	67	3	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	65	68	4	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	66	69	5	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	67	70	6	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	68	71	7	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	69	72	8	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	70	72	8	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	71	74	10	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	72	75	11	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	73	76	12	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	74	77	13	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	75	78	14	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	76	79	15	1.00E+10	1.00E+10	0.4	0	1
+#element 	zeroLengthContact3D	77	80	16	1.00E+10	1.00E+10	0.4	0	1
+#puts "    creat to it"
 #
+# element zeroLengthImpact3D $tag $slaveNode $masterNode $direction $initGap $frictionRatio $Kt $Kn $Kn2 $Delta_y $cohesion
+element 	zeroLengthImpact3D	62	65	1	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	63	66	2	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	64	67	3	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	65	68	4	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	66	69	5	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	67	70	6	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	68	71	7	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	69	72	8	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	70	73	9	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	71	74	10	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	72	75	11	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	73	76	12	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	74	77	13	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	75	78	14	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	76	79	15	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	77	80	16	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+
+
+
+
 
 
 recorder Node -file AnewD.out -time -node  7 -dof 3 disp
