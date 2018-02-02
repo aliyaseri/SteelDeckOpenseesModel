@@ -250,9 +250,43 @@ element 	flatSliderBearing	76	15	31	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
 element 	flatSliderBearing	77	16	32	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
 
 
-recorder Node -file SnewD.out -time -node  7 -dof 3 disp
-recorder Node -file SnewR1.out -time -node  1 -dof 3 reaction
-recorder Node -file SnewR21.out -time -node  16 -dof 3 reaction
+element 	flatSliderBearing	78	1	33	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	79	2	34	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	80	3	35	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	81	4	36	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	82	5	37	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	83	6	38	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	84	7	39	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	85	8	40	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	86	9	41	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	87	10	42	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	88	11	43	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	89	12	44	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	90	13	45	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	91	14	46	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	92	15	47	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	93	16	48	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+
+element 	flatSliderBearing	94	1	49	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	95	2	50	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	96	3	51	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	97	4	52	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	98	5	53	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	99	6	54	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	100	7	55	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	101	8	56	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	102	9	57	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	103	10	58	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	104	11	59	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	105	12	60	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	106	13	61	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	107	14	62	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	108	15	63	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	109	16	64	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+
+recorder Node -file S2newD.out -time -node  7 -dof 3 disp
+recorder Node -file S2newR1.out -time -node  1 -dof 3 reaction
+recorder Node -file S3newR21.out -time -node  16 -dof 3 reaction
 
 #load
 pattern Plain 1 Linear { ;
