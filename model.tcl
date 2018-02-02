@@ -8,6 +8,79 @@ model BasicBuilder -ndm 3 -ndf 6
 
 source node.tcl
 
+model BasicBuilder -ndm 3 -ndf 3
+##
+node 	65	0	0	0
+node 	66	0.143	0	0
+node 	67	0.4287	0	0
+node 	68	0.7144	0	0
+node 	69	1.0001	0	0
+node 	70	1.2858	0	0
+node 	71	1.5715	0	0
+node 	72	1.8572	0	0
+node 	73	2.1429	0	0
+node 	74	2.4286	0	0
+node 	75	2.7143	0	0
+node 	76	3	0	0
+node 	77	3.2857	0	0
+node 	78	3.5714	0	0
+node 	79	3.8571	0	0
+node 	80	4.0001	0	0
+
+node 	81	0	0	0.1
+node 	82	0.143	0	0.1
+node 	83	0.4287	0	0.1
+node 	84	0.7144	0	0.1
+node 	85	1.0001	0	0.1
+node 	86	1.2858	0	0.1
+node 	87	1.5715	0	0.1
+node 	88	1.8572	0	0.1
+node 	89	2.1429	0	0.1
+node 	90	2.4286	0	0.1
+node 	91	2.7143	0	0.1
+node 	92	3	0	0.1
+node 	93	3.2857	0	0.1
+node 	94	3.5714	0	0.1
+node 	95	3.8571	0	0.1
+node 	96	4.0001	0	0.1
+
+
+model BasicBuilder -ndm 3 -ndf 6
+
+equalDOF 	1	65	1	2	3
+equalDOF 	2	66	1	2	3
+equalDOF 	3	67	1	2	3
+equalDOF 	4	68	1	2	3
+equalDOF 	5	69	1	2	3
+equalDOF 	6	70	1	2	3
+equalDOF 	7	71	1	2	3
+equalDOF 	8	72	1	2	3
+equalDOF 	9	73	1	2	3
+equalDOF 	10	74	1	2	3
+equalDOF 	11	75	1	2	3
+equalDOF 	12	76	1	2	3
+equalDOF 	13	77	1	2	3
+equalDOF 	14	78	1	2	3
+equalDOF 	15	79	1	2	3
+equalDOF 	16	80	1	2	3
+
+equalDOF 	17	81	1	2	3
+equalDOF 	18	82	1	2	3
+equalDOF 	19	83	1	2	3
+equalDOF 	20	84	1	2	3
+equalDOF 	21	85	1	2	3
+equalDOF 	22	86	1	2	3
+equalDOF 	23	87	1	2	3
+equalDOF 	24	88	1	2	3
+equalDOF 	25	89	1	2	3
+equalDOF 	26	90	1	2	3
+equalDOF 	27	91	1	2	3
+equalDOF 	28	92	1	2	3
+equalDOF 	29	93	1	2	3
+equalDOF 	30	94	1	2	3
+equalDOF 	31	95	1	2	3
+equalDOF 	32	96	1	2	3
+
 
 #define Rigidity 
 
@@ -30,23 +103,23 @@ source node.tcl
 #rigidLink 	beam	15	31
 #rigidLink 	beam	16	32
 #
-rigidLink 	beam	17	65
-rigidLink 	beam	18	66
-rigidLink 	beam	19	67
-rigidLink 	beam	20	68
-rigidLink 	beam	21	69
-rigidLink 	beam	22	70
-rigidLink 	beam	23	71
-rigidLink 	beam	24	72
-rigidLink 	beam	25	73
-rigidLink 	beam	26	74
-rigidLink 	beam	27	75
-rigidLink 	beam	28	76
-rigidLink 	beam	29	77
-rigidLink 	beam	30	78
-rigidLink 	beam	31	79
-rigidLink 	beam	32	80
-
+#rigidLink 	beam	17	65
+#rigidLink 	beam	18	66
+#rigidLink 	beam	19	67
+#rigidLink 	beam	20	68
+#rigidLink 	beam	21	69
+#rigidLink 	beam	22	70
+#rigidLink 	beam	23	71
+#rigidLink 	beam	24	72
+#rigidLink 	beam	25	73
+#rigidLink 	beam	26	74
+#rigidLink 	beam	27	75
+#rigidLink 	beam	28	76
+#rigidLink 	beam	29	77
+#rigidLink 	beam	30	78
+#rigidLink 	beam	31	79
+#rigidLink 	beam	32	80
+#
 
 
 
@@ -155,50 +228,51 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 
 
 #element zeroLengthContact3D $eleTag $sNode $mNode $Kn $Kt $mu $c $dir
-#element 	zeroLengthImpact3D	62	65	1	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	63	66	2	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	64	67	3	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	65	68	4	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	66	69	5	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	67	70	6	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	68	71	7	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	69	72	8	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	70	72	8	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	71	74	10	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	72	75	11	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	73	76	12	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	74	77	13	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	75	78	14	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	76	79	15	1.00E+10	1.00E+10	0.4	0	1
-#element 	zeroLengthContact3D	77	80	16	1.00E+10	1.00E+10	0.4	0	1
-#puts "    creat to it"
-#
+#element 	zeroLengthContact3D	62	65	81	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	63	66	82	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	64	67	83	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	65	68	84	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	66	69	85	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	67	70	86	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	68	71	87	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	69	72	88	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	70	73	89	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	71	74	90	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	72	75	91	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	73	76	92	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	74	77	93	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	75	78	94	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	76	79	95	1.00E+10	1.00E+10	0.4	0	3
+#element 	zeroLengthContact3D	77	80	96	1.00E+10	1.00E+10	0.4	0	3
+
+puts "    creat to it"
+
 # element zeroLengthImpact3D $tag $slaveNode $masterNode $direction $initGap $frictionRatio $Kt $Kn $Kn2 $Delta_y $cohesion
-element 	zeroLengthImpact3D	62	65	1	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	63	66	2	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	64	67	3	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	65	68	4	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	66	69	5	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	67	70	6	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	68	71	7	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	69	72	8	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	70	73	9	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	71	74	10	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	72	75	11	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	73	76	12	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	74	77	13	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	75	78	14	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	76	79	15	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	77	80	16	3	0	0.4	1.00E+10	1.00E+10	1.00E+10	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	62	65	81	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	63	66	82	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	64	67	83	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	65	68	84	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	66	69	85	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	67	70	86	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	68	71	87	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	69	72	88	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	70	73	89	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	71	74	90	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	72	75	91	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	73	76	92	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	74	77	93	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	75	78	94	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	76	79	95	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	77	80	96	3	0	0.4	1.00E+10	1.00E+10	1.00E+5	0.00E+00	0.00E+00
 
 
 
 
 
 
-recorder Node -file AnewD.out -time -node  7 -dof 3 disp
-recorder Node -file AnewR1.out -time -node  1 -dof 3 reaction
-recorder Node -file AnewR21.out -time -node  16 -dof 3 reaction
+recorder Node -file CnewD.out -time -node  7 -dof 3 disp
+recorder Node -file CnewR1.out -time -node  1 -dof 3 reaction
+recorder Node -file CnewR21.out -time -node  16 -dof 3 reaction
 
 #load
 pattern Plain 1 Linear { ;
