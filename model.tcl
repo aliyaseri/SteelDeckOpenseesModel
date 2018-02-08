@@ -220,6 +220,24 @@ equalDOF 	63	159	1	2	3
 equalDOF 	64	160	1	2	3
 
 
+rigidLink 	beam		1	17
+rigidLink 	beam		2	18
+rigidLink 	beam		3	19
+rigidLink 	beam		4	20
+rigidLink 	beam		5	21
+rigidLink 	beam		6	22
+rigidLink 	beam		7	23
+rigidLink 	beam		8	24
+rigidLink 	beam		9	25
+rigidLink 	beam		10	26
+rigidLink 	beam		11	27
+rigidLink 	beam		12	28
+rigidLink 	beam		13	29
+rigidLink 	beam		14	30
+rigidLink 	beam		15	31
+rigidLink 	beam		16	32
+
+
 #
 
 #Define Constrain	
