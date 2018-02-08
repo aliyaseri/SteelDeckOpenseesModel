@@ -329,23 +329,22 @@ element 	zeroLengthImpact3D	91	94	142	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+0
 element 	zeroLengthImpact3D	92	95	143	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 element 	zeroLengthImpact3D	93	96	144	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 
-element 	zeroLengthImpact3D	78	97	145	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	79	98	146	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	80	99	147	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	81	100	148	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	82	101	149	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	83	102	150	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	84	103	151	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	85	104	152	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	86	105	153	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	87	106	154	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	88	107	155	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	89	108	156	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	90	109	157	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	91	110	158	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	92	111	159	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-element 	zeroLengthImpact3D	93	112	160	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
-
+element 	zeroLengthImpact3D	94	97	145	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	95	98	146	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	96	99	147	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	97	100	148	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	98	101	149	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	99	102	150	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	100	103	151	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	101	104	152	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	102	105	153	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	103	106	154	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	104	107	155	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	105	108	156	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	106	109	157	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	107	110	158	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	108	111	159	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	109	112	160	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 
 recorder Node -file AA2newD.out -time -node  7 -dof 3 disp
 recorder Node -file AA2newR1.out -time -node  1 -dof 3 reaction
