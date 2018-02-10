@@ -220,23 +220,23 @@ equalDOF 	63	159	1	2	3
 equalDOF 	64	160	1	2	3
 
 
-rigidLink 	beam		1	17
-rigidLink 	beam		2	18
-rigidLink 	beam		3	19
-rigidLink 	beam		4	20
-rigidLink 	beam		5	21
-rigidLink 	beam		6	22
-rigidLink 	beam		7	23
-rigidLink 	beam		8	24
-rigidLink 	beam		9	25
-rigidLink 	beam		10	26
-rigidLink 	beam		11	27
-rigidLink 	beam		12	28
-rigidLink 	beam		13	29
-rigidLink 	beam		14	30
-rigidLink 	beam		15	31
-rigidLink 	beam		16	32
-
+#rigidLink 	beam		1	17
+#rigidLink 	beam		2	18
+#rigidLink 	beam		3	19
+#rigidLink 	beam		4	20
+#rigidLink 	beam		5	21
+#rigidLink 	beam		6	22
+#rigidLink 	beam		7	23
+#rigidLink 	beam		8	24
+#rigidLink 	beam		9	25
+#rigidLink 	beam		10	26
+#rigidLink 	beam		11	27
+#rigidLink 	beam		12	28
+#rigidLink 	beam		13	29
+#rigidLink 	beam		14	30
+#rigidLink 	beam		15	31
+#rigidLink 	beam		16	32
+#
 
 #
 
@@ -363,6 +363,110 @@ element 	zeroLengthImpact3D	106	109	157	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E
 element 	zeroLengthImpact3D	107	110	158	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 element 	zeroLengthImpact3D	108	111	159	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 element 	zeroLengthImpact3D	109	112	160	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+
+element 	zeroLengthImpact3D	158	65	113	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	159	66	114	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	160	67	115	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	161	68	116	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	162	69	117	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	163	70	118	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	164	71	119	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	165	72	120	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	166	73	121	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	167	74	122	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	168	75	123	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	169	76	124	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	170	77	125	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	171	78	126	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	172	79	127	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	173	80	128	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+												
+element 	zeroLengthImpact3D	174	81	129	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	175	82	130	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	176	83	131	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	177	84	132	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	178	85	133	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	179	86	134	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	180	87	135	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	181	88	136	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	182	89	137	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	183	90	138	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	184	91	139	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	185	92	140	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	186	93	141	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	187	94	142	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	188	95	143	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	189	96	144	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+												
+element 	zeroLengthImpact3D	190	97	145	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	191	98	146	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	192	99	147	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	193	100	148	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	194	101	149	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	195	102	150	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	196	103	151	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	197	104	152	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	198	105	153	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	199	106	154	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	200	107	155	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	201	108	156	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	202	109	157	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	203	110	158	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	204	111	159	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	205	112	160	2	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+												
+												
+element 	zeroLengthImpact3D	110	65	113	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	111	66	114	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	112	67	115	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	113	68	116	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	114	69	117	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	115	70	118	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	116	71	119	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	117	72	120	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	118	73	121	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	119	74	122	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	120	75	123	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	121	76	124	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	122	77	125	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	123	78	126	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	124	79	127	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	125	80	128	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+												
+element 	zeroLengthImpact3D	126	81	129	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	127	82	130	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	128	83	131	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	129	84	132	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	130	85	133	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	131	86	134	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	132	87	135	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	133	88	136	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	134	89	137	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	135	90	138	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	136	91	139	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	137	92	140	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	138	93	141	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	139	94	142	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	140	95	143	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	141	96	144	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+												
+element 	zeroLengthImpact3D	142	97	145	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	143	98	146	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	144	99	147	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	145	100	148	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	146	101	149	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	147	102	150	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	148	103	151	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	149	104	152	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	150	105	153	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	151	106	154	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	152	107	155	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	153	108	156	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	154	109	157	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	155	110	158	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	156	111	159	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+element 	zeroLengthImpact3D	157	112	160	1	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
+
 
 recorder Node -file AA1newD.out -time -node  7 -dof 3 disp
 recorder Node -file AA1newR1.out -time -node  1 -dof 3 reaction
