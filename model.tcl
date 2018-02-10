@@ -364,9 +364,9 @@ element 	zeroLengthImpact3D	107	110	158	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E
 element 	zeroLengthImpact3D	108	111	159	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 element 	zeroLengthImpact3D	109	112	160	3	0	0.4	1.00E+10	1.00E+10	1.00E+05	0.00E+00	0.00E+00
 
-recorder Node -file AA2newD.out -time -node  7 -dof 3 disp
-recorder Node -file AA2newR1.out -time -node  1 -dof 3 reaction
-recorder Node -file AA3newR21.out -time -node  16 -dof 3 reaction
+recorder Node -file AA1newD.out -time -node  7 -dof 3 disp
+recorder Node -file AA1newR1.out -time -node  1 -dof 3 reaction
+recorder Node -file AA1newR21.out -time -node  16 -dof 3 reaction
 
 #load
 pattern Plain 1 Linear { ;
