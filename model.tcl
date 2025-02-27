@@ -31,7 +31,77 @@ source node.tcl
 #rigidLink 	beam	16	32
 
 
+model BasicBuilder -ndm 3 -ndf 3
 
+node 	65	0	0	0
+node 	66	0.143	0	0
+node 	67	0.4287	0	0
+node 	68	0.7144	0	0
+node 	69	1.0001	0	0
+node 	70	1.2858	0	0
+node 	71	1.5715	0	0
+node 	72	1.8572	0	0
+node 	73	2.1429	0	0
+node 	74	2.4286	0	0
+node 	75	2.7143	0	0
+node 	76	3	0	0
+node 	77	3.2857	0	0
+node 	78	3.5714	0	0
+node 	79	3.8571	0	0
+node 	80	4.0001	0	0
+
+node 	81	0	0	0.1
+node 	82	0.143	0	0.1
+node 	83	0.4287	0	0.1
+node 	84	0.7144	0	0.1
+node 	85	1.0001	0	0.1
+node 	86	1.2858	0	0.1
+node 	87	1.5715	0	0.1
+node 	88	1.8572	0	0.1
+node 	89	2.1429	0	0.1
+node 	90	2.4286	0	0.1
+node 	91	2.7143	0	0.1
+node 	92	3	0	0.1
+node 	93	3.2857	0	0.1
+node 	94	3.5714	0	0.1
+node 	95	3.8571	0	0.1
+node 	96	4.0001	0	0.1
+
+
+model BasicBuilder -ndm 3 -ndf 6
+equalDOF 	17	81	1	2	3
+equalDOF 	18	82	1	2	3
+equalDOF 	19	83	1	2	3
+equalDOF 	20	84	1	2	3
+equalDOF 	21	85	1	2	3
+equalDOF 	22	86	1	2	3
+equalDOF 	23	87	1	2	3
+equalDOF 	24	88	1	2	3
+equalDOF 	25	89	1	2	3
+equalDOF 	26	90	1	2	3
+equalDOF 	27	91	1	2	3
+equalDOF 	28	92	1	2	3
+equalDOF 	29	93	1	2	3
+equalDOF 	30	94	1	2	3
+equalDOF 	31	95	1	2	3
+equalDOF 	32	96	1	2	3
+
+equalDOF 	1	65	1	2	3
+equalDOF 	2	66	1	2	3
+equalDOF 	3	67	1	2	3
+equalDOF 	4	68	1	2	3
+equalDOF 	5	69	1	2	3
+equalDOF 	6	70	1	2	3
+equalDOF 	7	71	1	2	3
+equalDOF 	8	72	1	2	3
+equalDOF 	9	73	1	2	3
+equalDOF 	10	74	1	2	3
+equalDOF 	11	75	1	2	3
+equalDOF 	12	76	1	2	3
+equalDOF 	13	77	1	2	3
+equalDOF 	14	78	1	2	3
+equalDOF 	15	79	1	2	3
+equalDOF 	16	80	1	2	3
 
 
 
@@ -44,7 +114,13 @@ fix 	16	1	1	1	1	1	0 ;
 
 uniaxialMaterial   Steel02        1 300e6   202.7e9  0.000001 18.5 0.925 0.15
 uniaxialMaterial   Steel02        2 415e6   202.7e9  0.000001 18.5 0.925 0.15
+uniaxialMaterial Elastic 50 201e9
 
+
+
+#frictionModel Coulomb $frnTag $mu
+
+frictionModel Coulomb 1 0.4
 
 #nDmaterial PlaneStressUserMaterial $matTag 40 7 $fc $ft $fcu $epsc0 $epscu $epstu $stc
 #                                                               fc         ft    fcu     epsc0     epscu  epstu  stc
@@ -100,7 +176,6 @@ source element.tcl
 #element 	truss	60	15	31	0.1	2
 #element 	truss	61	16	32	0.1	2
 
-
 #element 	beam	eleTag	I 	j	A	E	G	J	Iz	Iy	transtag	mass
 element 	elasticBeamColumn	46	1	17	0.000314159	2.10E+11	80769230769	1.5708E-08	7.85398E-09	7.85398E-09	1	7850
 element 	elasticBeamColumn	47	2	18	0.000314159	2.10E+11	80769230769	1.5708E-08	7.85398E-09	7.85398E-09	1	7850
@@ -137,11 +212,81 @@ element 	elasticBeamColumn	61	16	32	0.000314159	2.10E+11	80769230769	1.5708E-08	
 #element 	elasticBeamColumn	60	15	31	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 #element 	elasticBeamColumn	61	16	32	0.125663706	2.10E+11	80769230769	0.002513274	0.001256637	0.001256637	1	7850
 
+#element flatSliderBearing $eleTag $iNode $jNode $frnMdlTag $kInit -P $matTag -T $matTag -My $matTag -Mz $matTag <-orient <$x1 $x2 $x3> $y1 $y2 $y3> <-shearDist $sDratio> <-doRayleigh> <-mass $m> <-iter $maxIter $tol>
+#
+#element 	flatSliderBearing	62	65	81	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	63	66	82	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	64	67	83	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	65	68	84	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	66	69	85	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	67	70	86	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	68	71	87	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	69	72	88	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	70	73	89	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	71	74	90	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	72	75	91	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	73	76	92	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	74	77	93	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	75	78	94	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	76	79	95	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+#element 	flatSliderBearing	77	80	96	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
 
 
-recorder Node -file AnewD.out -time -node  7 -dof 3 disp
-recorder Node -file AnewR1.out -time -node  1 -dof 3 reaction
-recorder Node -file AnewR21.out -time -node  16 -dof 3 reaction
+element 	flatSliderBearing	62	1	17	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	63	2	18	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	64	3	19	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	65	4	20	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	66	5	21	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	67	6	22	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	68	7	23	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	69	8	24	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	70	9	25	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	71	10	26	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	72	11	27	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	73	12	28	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	74	13	29	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	75	14	30	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	76	15	31	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	77	16	32	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+
+
+element 	flatSliderBearing	78	1	33	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	79	2	34	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	80	3	35	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	81	4	36	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	82	5	37	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	83	6	38	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	84	7	39	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	85	8	40	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	86	9	41	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	87	10	42	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	88	11	43	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	89	12	44	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	90	13	45	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	91	14	46	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	92	15	47	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	93	16	48	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+
+element 	flatSliderBearing	94	1	49	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	95	2	50	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	96	3	51	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	97	4	52	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	98	5	53	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	99	6	54	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	100	7	55	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	101	8	56	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	102	9	57	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	103	10	58	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	104	11	59	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	105	12	60	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	106	13	61	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	107	14	62	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	108	15	63	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+element 	flatSliderBearing	109	16	64	1	1.00E+10	-P	50	-T	50	-My	50	-Mz	50
+
+recorder Node -file S2newD.out -time -node  7 -dof 3 disp
+recorder Node -file S2newR1.out -time -node  1 -dof 3 reaction
+recorder Node -file S3newR21.out -time -node  16 -dof 3 reaction
 
 #load
 pattern Plain 1 Linear { ;
